@@ -27,4 +27,40 @@ Use if-elif-else statements: Implemented in the get_grade_and_message function t
 Add input validation: Used try-except for non-numbers and logic checks for the 0-100 range.
 
 Create at least one function: Created the modular function get_grade_and_message() to separate logic from input handling.
+TEST CASE REPORT
+
+Test 1: Normal Success (A Grade)
+Input: 95
+Expected Output: Grade A, "Outstanding work!"
+Result: Pass
+
+Test 2: Normal Success (C Grade)
+Input: 72.5
+Expected Output: Grade C, "Good effort."
+Result: Pass
+
+Test 3: Boundary Check (Minimum Pass)
+Input: 60
+Expected Output: Grade D
+Result: Pass
+
+Test 4: Boundary Check (Fail)
+Input: 59
+Expected Output: Grade F
+Result: Pass
+
+Test 5: Invalid Input (Out of Range High)
+Input: 105
+Expected Output: Error: Please enter a number between 0 and 100.
+Result: Pass
+
+Test 6: Invalid Input (Out of Range Low)
+Input: -10
+Expected Output: Error: Please enter a number between 0 and 100.
+Result: Pass
+
+Test 7: Invalid Input (Non-numeric)
+Input: eighty
+Expected Output: Error: Invalid input. Please enter a numeric value.
+Result: Pass
 
